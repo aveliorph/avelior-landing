@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- The landing page lives in `src/components/landing/*`, composed by `src/routes/index.tsx`; its look is the `.lp-*` class layer in `src/styles.css` ported from the owner's original HTML, so keep new landing styles in that layer rather than Tailwind utilities to stay consistent.
+- QR codes are generated in the browser via a lazily imported `qrcode` (see `landing/qr.ts`) so nothing QR-related runs during SSR.
