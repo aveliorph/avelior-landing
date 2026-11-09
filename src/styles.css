@@ -830,3 +830,10 @@ dialog.lp-qr .lp-p-action { width: 100%; min-height: 50px; font-size: 11px; lett
   .lp-editor, .lp-pay-preview { padding: 20px 16px; }
   .lp-footer { justify-content: center; text-align: center; }
 }
+
+@media (max-width: 620px) {
+  .lp-pay-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+  .lp-pay-tabs .lp-tab { justify-content: center; gap: 6px; padding: 10px 6px !important; font-size: 12px !important; white-space: nowrap; }
+  .lp-pay-tabs .lp-tab .ico { width: 14px; height: 14px; }
+}
+.lp-card-stage .lp-variant { display: flex; width: fit-content; margin: 22px auto 0; }

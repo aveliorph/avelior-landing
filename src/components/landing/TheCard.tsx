@@ -33,20 +33,6 @@ export function TheCard() {
             </span>
           </button>
           <p className="lp-flip-hint">Tap the card to flip</p>
-        </div>
-
-        <div className="lp-card-copy lp-reveal" style={{ ["--d" as string]: ".1s" }}>
-          <p className="lp-eyebrow">The Card</p>
-          <h2 className="lp-h2">
-            {finish === "black" ? "Matte black." : "Clean white."}
-            <br />
-            <em>Made to last.</em>
-          </h2>
-          <p className="lp-lead">
-            Two finishes, one design — black with a white logo, or white with a black logo. Nothing but AVELIOR on the
-            front, and everything about you one tap away.
-          </p>
-
           <div className="lp-tabs lp-variant" role="tablist" aria-label="Card color">
             {(["black", "white"] as Finish[]).map((f) => (
               <button
@@ -62,6 +48,20 @@ export function TheCard() {
               </button>
             ))}
           </div>
+        </div>
+
+        <div className="lp-card-copy lp-reveal" style={{ ["--d" as string]: ".1s" }}>
+          <p className="lp-eyebrow">The Card</p>
+          <h2 className="lp-h2">
+            {finish === "black" ? "Matte black." : "Clean white."}
+            <br />
+            <em>Made to last.</em>
+          </h2>
+          <p className="lp-lead">
+            Two finishes, one design — black with a white logo, or white with a black logo. Nothing but AVELIOR on the
+            front, and everything about you one tap away.
+          </p>
+
 
           <ul className="lp-specs">
             <li>
