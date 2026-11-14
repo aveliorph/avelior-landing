@@ -32,7 +32,7 @@ jobs:
       - name: Build
         env:
           LOVABLE_SANDBOX: "1"
-        run: bun run build --base=/avelior-landing/
+        run: bun run build --base=/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
